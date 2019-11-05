@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>Cadastro de Agendamentos</title>
+	</head>
+	<body>
+		<h2>Cadastro de Agendamentos</h2>
+		<form 	action="gravaAgenda.php" 
+				method="post" 
+				enctype="multipart/form-data">
+				
+				Código da Agenda: <input 	type="number" 
+						name="codAgendamento"
+						min="1"
+						max="9999999999"> 
+						
+			<br>			
+				Código do Paciente: 
+				<input 	type="number" 
+						name="CodPaciente"
+						min="1"
+						max="9999999999">					
+				<br>
+				Convênio: 
+				<select name="Convenio">
+					<option value="S">Sim</option>
+					<option value="N">Nao</option>
+				</select>
+				<br>
+			
+			<fieldset>
+				<legend>Dados Médicos</legend>
+				Código do Médico: 
+				<input 	type="number" 
+						name="CodMed"
+						min="1"
+						max="9999999999">					
+				<br>
+				
+				Descriçao do Motivo do Agendamento:<br> 
+						<textarea 	name="descricao" 
+							rows="2" 
+							cols="60"	
+						placeholder="Motivo"></textarea>
+						
+				<br>
+				Descriçao do Serviço: <input type="text" name="servicoAtendimento"
+						maxlength="60" size="30" 
+				   placeholder="Informe o tipo de exame">
+				<br>	
+				Data de Inicio do Exame: 
+				<input 	type="date" 
+						name="DataEntrada"
+						min="2018-12-31"
+						max="2100-12-31">			
+				<br>
+			</fieldset> 			
+			<br><hr>
+			
+				<input type="submit" value="Gravar Agendamento">
+				<br><br>
+				<a href="listaAgenda.php">Verificar Agendamentos</a>
+				<br><br>
+				<a href="HOME.html">Back to Home</a>
+		</form>		
+	</body>
+</html>

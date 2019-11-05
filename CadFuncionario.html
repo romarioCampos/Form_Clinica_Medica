@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<title>Cadastro de Funcionários</title>
+	</head>
+	<body>
+		<h2>Cadastro de Funcionários</h2>
+		<form 	action="gravaFuncionario.php" 
+				method="post" 
+				enctype="multipart/form-data">
+				
+
+				Nome: <input type="text" name="nomeFuncionario"
+				maxlength="30" size="30" 
+			   placeholder="Nome do funcionario">
+			   <br>
+			   
+				Data de Nascimento: 
+				<input 	type="date" 
+						name="dtNascimento"
+						min="1900-12-31"
+						max="2100-12-31">			
+				<br>		   
+				
+				Funcionário Ativo:<br>
+		    <input type="radio" name="ativo" value="S" checked>Sim
+		    <input type="radio" name="ativo" value="N">Não			
+				
+				<br>
+				CPF :  
+				<input 	type="number" 
+					name="cpf" 
+					min="0" 
+					max="999.999.999.999" 
+					placeholder="999.999.999-99"
+					step="000.000.000.01"> <br>
+				
+				RG :  
+				<input 	type="number" 
+					name="rg" 
+					min="0" 
+					max="99.999.999.9" 
+					placeholder="99.999.999.9"
+					step="00.000.000.01"> <br>
+					
+				Setor: <input type="text" name="setor"
+				maxlength="50" size="30" 
+			   placeholder="Nome do setor">
+			   <br>					
+					
+				Data de Contratacao: 
+				<input 	type="date" 
+						name="dtContratacao"
+						min="1900-12-31"
+						max="2100-12-31">			
+				<br>
+				
+				Escolaridade: <input type="text" name="escolaridade"
+				maxlength="50" size="30" 
+			   placeholder="Grau de escolaridade">
+			   <br>	
+			   
+			Sexo:
+		    <input type="radio" name="sexo" value="M" checked>Masculino
+		    <input type="radio" name="sexo" value="F">Feminino
+			<br>
+
+				Pretensao Salarial :  
+				<input 	type="number" 
+					name="salario" 
+					min="0" 
+					max="999999" 
+					placeholder="Salario"
+					step="00.000.000.01"> <br>
+			
+			
+			Telefone do Paciente :  
+			<input 	type="number" 
+					name="telefone" 
+					min="0" 
+					max="9999-9999" 
+					placeholder="9999-9999"
+					step="00000001">
+			<br>
+			Telefone Celular :  
+			<input 	type="number" 
+					name="celular" 
+					min="0" 
+					max="9999-9999" 
+					placeholder="9999-9999"
+					step="00000001">
+			<br>
+			Email: 
+				<input 	type="text" 
+						name="email" 
+						maxlength="50" 
+						size="50">
+			<hr>
+
+			
+			Anexe o Corriculo:
+			<input 	type="file" 
+					name="curriculo">
+			<hr>
+			
+				<input type="submit" value="Registrar Funcionario">
+				<br> <br>
+				<a href="listaFuncionario.php">Verificar Pagamentos</a>
+				<br> <br>
+		</form>		<a href="HOME.html">Back to Home</a>
+	</body>
+</html>

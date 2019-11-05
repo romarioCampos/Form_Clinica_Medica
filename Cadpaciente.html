@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<title>Cadastro dos Pacientes</title>
+	</head>
+	<body>
+		<h2>Cadastro dos Pacientes</h2>
+		<form 	action="atualizaPaciente.php" 
+				method="post" 
+				enctype="multipart/form-data">
+				
+
+				Nome: <input type="text" name="nomePaciente"
+				maxlength="30" size="30" 
+			   placeholder="Nome do paciente">
+			   <br>
+			   
+				Data de Nascimento: 
+				<input 	type="date" 
+						name="dtNascimento"
+						min="1900-12-31"
+						max="2100-12-31"
+						>			
+				<br>		   
+				
+				Paciente Ativo:<br>
+				<input type="radio" name="pacienteativo" value="S" checked>Sim
+				<input type="radio" name="pacienteativo" value="N">Nao			
+				
+				<br>
+				<fieldset>
+					<legend>Dados do Paciente</legend>
+					
+					CPF :  
+					<input 	type="number" 
+						name="cpf" 
+						min="0" 
+						max="999.999.999.999" 
+						placeholder="999.999.999-99"
+						step="000.000.000.01"> <br>
+				
+					RG :  
+					<input 	type="number" 
+						name="rg" 
+						min="0" 
+						max="99.999.999.9" 
+						placeholder="99.999.999.9"
+						step="00.000.000.01"> <br>
+					
+					Especialidade Medica: <input type="text" name="especialidademedica"
+					maxlength="50" size="30" 
+					placeholder="Especialidade Medica"> <br>					
+					
+				Data de Contratacao: 
+				<input 	type="date" 
+						name="dtContratacao"
+						min="1900-12-31"
+						max="2100-12-31"> <br>
+				
+				Escolaridade: <input type="text" name="escolaridade"
+				maxlength="50" size="30" 
+			   placeholder="Grau de escolaridade">
+			   <br>	
+			   
+			Sexo:
+		    <input type="radio" name="sexo" value="M" checked>Masculino
+		    <input type="radio" name="sexo" value="F">Feminino
+			<br>
+
+				Salario do Paciente :  
+				<input 	type="number" 
+					name="salario" 
+					min="0" 
+					max="999999" 
+					placeholder="Salario"
+					step="00.000.000.01"> 
+				<br>
+			</fieldset>
+			
+			Telefone do Paciente :  
+			<input 	type="number" 
+					name="telefone" 
+					min="0" 
+					max="9999-9999" 
+					placeholder="9999-9999"
+					step="00000001">
+			<br>
+			Celular do Paciente :  
+			<input 	type="number" 
+					name="celular" 
+					min="0" 
+					max="9999-9999" 
+					placeholder="9999-9999"
+					step="00000001">
+			<br>
+			Email: 
+				<input 	type="text" 
+						name="email" 
+						maxlength="50" 
+						size="50">
+			<hr>
+			
+				<input type="submit" value="Registrar Paciente">
+				<br> <br>
+				<a href="listaPaciente.php">Verificar Pagamentos</a>
+				<br> <br>
+		</form>		<a href="HOME.html">Back to Home</a>
+	</body>
+</html>

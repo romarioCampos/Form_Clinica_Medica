@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<title>Financeiro</title>
+	</head>
+	<body>
+		<h2>Financeiro</h2>
+		<form 	action="gravaCaixa.php" 
+				method="post" 
+				enctype="multipart/form-data">
+				
+				Código da Agenda: <input 	type="number" 
+						name="codAgendamento"
+						min="1"
+						max="9999999999"> 
+						
+			<br>			
+				Código do Paciente: 
+				<input 	type="number" 
+						name="codPaciente"
+						min="1"
+						max="9999999999">					
+				<br>
+				
+				Responsável pelo atendimento: 
+				<input 	type="number" 
+						name="codFuncionario"
+						min="1"
+						max="9999999999">					
+				<br>
+
+				Médico Executante: 
+				<input 	type="number" 
+						name="codMedico"
+						min="1"
+						max="9999999999">					
+				<br>				
+				Serviço Realizado: 
+				<input 	type="number" 
+						name="codServico"
+						min="1"
+						max="9999999999">					
+				<br>
+			
+			<fieldset>
+				<legend>Informações Contabeis</legend>
+				Valor Atendimento:  
+				<input 	type="number" 
+					name="valorAtendimento" 
+					min="0" 
+					max="9999.99" 
+					placeholder="9999,99"
+					step="0.01"> <br>
+					
+				Taxa de Serviço:  
+				<input 	type="number" 
+					name="taxaServico" 
+					min="0" 
+					max="9999.99" 
+					placeholder="999,99"
+					step="0.01"> <br>	
+
+				Desconto:  
+				<input 	type="number" 
+					name="descontoCliente" 
+					min="0" 
+					max="999.99" 
+					placeholder="999,99"
+					step="0.01"> <br>						
+				
+				<br>	
+				
+				Tipo de Pagamento: 
+				<input 	type="text" 
+						name="tipoPagamento" 
+						maxlength="50" 
+						size="50"> 	<br>	
+						
+				Data de acordo: 
+				<input 	type="date" 
+						name="dtFechamento"
+						min="1900-12-31"
+						max="2100-12-31">			
+				<br>
+			</fieldset> 			
+			<br><hr>
+			
+				<input type="submit" value="Gravar Conta">
+				<br> <br>
+				<a href="listaCaixa.php">Verificar Pagamentos</a>
+				<br> <br>
+				<a href="HOME.html">Back to Home</a>
+		</form>		
+	</body>
+</html>

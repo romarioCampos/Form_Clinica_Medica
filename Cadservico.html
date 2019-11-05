@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Servico</title>
+	</head>
+	<body>
+		<h2>Servico</h2>
+		<form 	action="gravaServico.php" 
+				method="post" 
+				enctype="multipart/form-data">
+				
+				Descricao Servico: 
+				<input 	type="text" 
+						name="descricao" 
+						maxlength="50" 
+						size="50"> 	<br>
+				
+				Servico Ativo:
+		    <input type="radio" name="servicoativo" value="S" checked>Sim
+		    <input type="radio" name="servicoativo" value="N">Nao			
+				
+				<br>
+				
+			<fieldset>
+				<legend>Informacoes Contabeis</legend>
+				Valor do Servico:  
+				<input 	type="number" 
+					name="valorservico" 
+					min="0" 
+					max="999.99" 
+					placeholder="999,99"
+					step="0.01"> <br>						
+				
+				<br>
+				
+			</fieldset> 			
+			<br><hr>
+			
+				<input type="submit" value="Gravar Servico">
+				<br> <br>
+				<a href="listaServico.php">Verificar Pagamentos</a>
+				<br> <br>
+				<a href="HOME.html">Back to Home</a>
+		</form>		
+	</body>
+</html>
